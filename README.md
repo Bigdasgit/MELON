@@ -2,9 +2,9 @@
 
 This repository provides the official PyTorch implementation of LETTER, as introduced in the following paper:
 
-> MELON: Learning Multi-Aspect Modality Preferences for Accurate Multimedia Recommendation
-> Dongho Jeong, Taeri Kim, Donghyun Cho and Sang-Wook Kim
-> In Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’25)
+> MELON: Learning Multi-Aspect Modality Preferences for Accurate Multimedia Recommendation  
+> Dongho Jeong, Taeri Kim, Donghyun Cho and Sang-Wook Kim  
+> In Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’25)  
 
 
 ### Requirements
