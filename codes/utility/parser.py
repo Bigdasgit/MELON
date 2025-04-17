@@ -7,7 +7,7 @@ def parse_args(flags=False):
                         help='Input data path.')
     parser.add_argument('--seed', type=int, default=978,
                         help='Random seed')
-    parser.add_argument('--dataset', nargs='?', default='MenClothing',
+    parser.add_argument('--dataset', nargs='?', default='WomenClothing',
                         help='Choose a dataset from {WomenClothing, MenClothing, Toys_and_Games, Sports}')
     parser.add_argument('--verbose', type=int, default=5,
                         help='Interval of evaluation.')
@@ -27,14 +27,14 @@ def parse_args(flags=False):
                         help='relational embedding size.')
     parser.add_argument('--weight_size', nargs='?', default='[64,64]',
                     help='Output sizes of every layer')
-    parser.add_argument('--alpha', type=float, default=1.0,
+    parser.add_argument('--alpha', type=float, default=0.3,
                         help='Coefficient of mce module.')
-    parser.add_argument('--beta', type=float, default=0.4,
+    parser.add_argument('--beta', type=float, default=0.6,
                         help='Coefficient of rce module.')
-    parser.add_argument('--gamma', type=float, default=0.5,
+    parser.add_argument('--gamma', type=float, default=0.4,
                         help='Coefficient of fine-grained interest matching.')
     parser.add_argument('--delta', type=float, default=0.9,
-                        help='Coefficient of self node features. 0.9 for Men Clothing, 1.0 for the others')
+                        help='Coefficient of self node features. 0.9 for Women&Men Clothing, 1.0 for the others')
     parser.add_argument('--ui_k', type=str, default='5',
                         help='user-item top/bottom-k graph')
     parser.add_argument('--core', type=int, default=5,
